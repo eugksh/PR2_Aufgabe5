@@ -5,7 +5,7 @@ class Kino {
    private int sitz;
 
    public Kino() {
-       int [][] sp_array = new int[5][10];
+
    }
 
    public int getSitz(){
@@ -28,11 +28,13 @@ class Kino {
 public class Sitzplan {
     public static void main(String[] args) {
         Kino kn = new Kino();
+        int [][] sp_array = new int[5][10];
+
         Scanner eingabe = new Scanner(System.in);
         System.out.println("Welche Reihe?");
-        kn.setReihe(eingabe.nextInt());
+        int reiheEingabe = eingabe.nextInt();
         System.out.println("Welches Sitz?");
-        kn.setSitz(eingabe.nextInt());
+        int sitzEingabe = eingabe.nextInt();
 
 
         sp_array [][] = [reihe][sitz];
